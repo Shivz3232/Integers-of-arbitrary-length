@@ -1,0 +1,27 @@
+##Introduction
+--------------
+    #Inbuilt integer data types can store values only upto a max size defined by the language. This is where Integers of Arbitrary length(IntAl) come in handy.
+
+    #The large amount of memory provided by the string data type( >~1024KB ) is used to store arbitrary numbers of extreme lengths.
+     This gives an edge over using the inbuilt data types especially in C where unsigned long long allows values only upto 18,446,744,073,709,551,615.
+    
+    #IntAl provides a way to handle and operate on very large numeric values which are frequent in scientific and astronomic calculations.
+     They also provide a way to maintain precision on the cost of memory available for computation.
+     They can also be used for indexing in very large databases.
+
+##Approach
+----------
+    #Basic arithmatic oprations(add, dif, mul) and some other special functions(compare, factorial, fib, pow, max and min) have been implemented 
+     using naive algorithms. (Addition and dif first reverse the string to make the operations easier which may at the cost of extra time).
+    #Binary search has been implemented with an algorithm of time complexity of O(log n)
+    #The mod functions uses an algorithm with a time complexity O(log i/p[0])
+    #GCD function uses the Euclid's algorithm with a time complexity O(log n).
+    #Sorting has been implemented with an algorithm of time complexity O(n log n) (Quick Sort).
+    #Personally I felt that managing the memory allocations to be the zenith of the problem rather than the operation algorithm themselves.
+     Some test runs of my implementation resulted in windows hitting blue screen!
+
+##Future work
+-------------
+    #There is definitely scope for extending my implementaition to IntAls of lenghts greater than just 1000.
+    #The library can definitely include a function for the division operation as well as binary operations.
+    #Extending IntAl concept to scrutinize numbers with different bases also remains one of the highlight possibilities.
